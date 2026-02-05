@@ -9,3 +9,60 @@ print(text.upper())
 print(text.lower())
 print(text.capitalize())
 print(text.title())
+
+print("*"*20)
+print("*" + "" "" * 5 + "Welcome")
+print("*"*20)
+
+word = 'CAT'
+print(f"{word[0]} index {0}, index {-3}")
+print(f"{word[1]} index {1}, index {-2}")
+print(f"{word[2]} index {2}, index {-2}")
+
+text = "Computer Science"
+print(text[0:8])
+print(text[9:])
+print(text[3:6])
+
+date = "2026-01-27"
+# Extract year (first 4 characters)
+year = _______________
+# Extract month (characters 5-6)
+month = _______________
+# Extract day (last 2 characters)
+day = _______________
+print(f"Year: {year}, Month: {month}, Day: {day}")
+
+text1 = "Python"
+reversed1 = text1[::-1]
+print(reversed1) # nohtyP
+# 2. Every other character from "programming"
+text2 = "programming"
+every_other = text2[::-2]
+print(every_other) # pormin
+# 3. Last 3 characters of "Hello, World!" reversed
+text3 = "Hello, World!"
+last_three_reversed = text3[-1:-4:-1]
+
+text = "hello world, welcome to PYTHON"
+# Convert to all uppercase
+upper_text = _______________
+# Convert to all lowercase
+lower_text = _______________
+# Convert to title case
+title_text = _______________
+print(upper_text) # HELLO WORLD, WELCOME TO PYTHON
+print(lower_text) # hello world, welcome to python
+print(title_text) # Hello World, Welcome To Python
+
+"Write a program that analyzes a string and reports:
+1. The total length
+2. Number of times 'a' appears (case-insensitive)
+3. Whether it starts with "Hello""
+
+text = "Hello, this is a sample sentence!"
+# Your code here: 
+print("Total length:", len(text))
+print("Number of a's:", text.upper().count('A'))
+print("Start with Hello?:", textstartwith("Hello"))
+print("Ends with punctuations?:", text.endswith('i') or text.endswith('!')or text.endswith('?'))
