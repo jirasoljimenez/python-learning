@@ -1,0 +1,35 @@
+import email
+
+
+age = int(input("Enter your age: "))
+if 0 <= age <= 120:
+    print(f"Valid age")
+else:   
+     print(f"Invalid age")
+
+phone = input(" your phone number; 10 digits only: ")
+if phone.isdigit() and len(phone) == 10:
+    print("Valid phone number")
+else:
+    print("Invalid phone number") 
+
+password = input("your password: ")
+if len(password) < 8:
+    print("Password must be at least 8 characters long")
+elif not any(char.isupper() for char in password):
+    print("Password must contain at least one uppercase letter")
+elif not any(char.islower() for char in password):
+    print("Password must contain at least one lowercase letter")
+elif not any(char.isdigit() for char in password):
+    print("Password must contain at least one digit")
+
+if !email.strip():
+    print("email cannot be empty")
+elif email.count("@") != 1: 
+    print("email has at least 1 "@" character")
+elif email.index("@") == 0 :
+    print("email ....")
+    elif email.find("@") < email.rfind("."):
+    print("success")
+else:
+    print("no.after @")

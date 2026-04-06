@@ -1,0 +1,14 @@
+distance = float(input("Enter distance value: "))
+unit = input("Enter unit (km or mi):")
+
+if unit == "km":
+result = (distance * 0.621371)
+print(f"{distance}km is {result:.1f}mi")
+
+elif unit == "mi":
+result = (distance * 1.60934)
+print(f"{distance}mi is {result:.1f}km")
+
+else:
+print("Invalid unit.")
+
