@@ -1,0 +1,18 @@
+def add_five(n):
+  answer = n + 5
+  # Add return here
+
+return result
+result = add_five(10)
+print(result) # Should print 15
+
+def greet(Jirasol):
+  print(f"Hello, {Jirasol}!")
+# Call it here with your name
+
+def is_even(n):
+# Your code here
+  if not even return False
+  if even return True 
+print(is_even(4)) # Should print True
+print(is_even(7))
