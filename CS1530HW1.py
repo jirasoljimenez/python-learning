@@ -83,4 +83,25 @@ removed = cart.pop("Bread")
 print(removed)
 print(cart)
 
+"student_name" = valid, names are immutable
+[1,2,3] = invalid, lists are mutable
+100 = valid, numbers are immutable
+("x","y") = valid, tuples are immutable
+{"a":1} = invalid, sets are mutable
+frozenset({1,2}) = vaild, frozensets are immutable
 
+
+#FindErrorAndFix
+locations = {(40.7,-70.0): "New York", (34.0,-118.2):"Los Angeles:}
+
+
+#PrintOutput
+data = {"a": 1, "b": 2, "a": 3, "b": 4}
+print(data)
+print(len(data))
+TypeError: Unhashable type: 'dict'
+It was valid, I wonder why however since it is a dict class and is mutable
+
+#investigateHash
+print(hash("Jirasol"))
+7858717126683173729
