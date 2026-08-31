@@ -163,7 +163,54 @@ prices = {"coffee": 4.50, "tea": 3.00, "juice": 5.25}
 for name, price in prices.items():
     taxed_price = price * 1.10
     print(f"{name}: ${price:.2f} + tax = ${taxed_price:.2f}")
+counter = 0
+for item, price in prices.items():
+    if price >= 4.00:
+        counter += 1
+print(f"There are {counter} items that are more than $4.00")
+#variableSwapping
+x, y = (10, 20)
+x, y = y, x
+
+#ExtendedUnpacking
+[1, 2, 3, 4, 5]
+def get_stats(number):
+    return min(numnber), max(number), sum(number)/len(number)
 
 
-    
+scores = {"Alice": 88, "Bob": 65, "Carol": 92, "Dave": 71, "Eve": 58}
+highest_name, highest_score = max(scores.items(), key=lambda x:[1])
+print(f"High Score: {highest_name}: {highest_score}")
+passed = []
+fail = []
+for name, score in scores.items():
+    if score >= 70:
+        passed.append(name)
+    else:
+        fail.append(name)
+print(f"Pass: {passed}")
+print(f"Fail: {fail}")
+ave_score = sum(scores.values()) / len(scores)
+print(f"Class Average: {ave_score:.2f}")
+deviation = {}
+for name, score in scores.items():
+    deviation[name] = round(score - ave_score, 2 )
+print(f"Deviation: {deviation}")
+
+range_dict = {i: i*2 for i in range(50000)}
+start = time.time()
+for name, score in range_dict.items():
+    _ = name + score
+first = time.time()
+name_score = time.time() - first
+start = time.time()
+for name in range_dict.keys():
+    score = range_dict[name]
+    _ = name + score
+last = time.time() - start
+print(f"items(): {name_score:.4f}s")
+print(f"keys() + lookup: {last:.4f}s")
+print(f"items() is {last/name_score:.1f}x faster")
+#im confused with this one
+
     
